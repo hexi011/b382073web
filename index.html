@@ -2,9 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>YAYA</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: white;
+            border-radius: 0 0 30px 30px;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-link {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: #4D7C4B;
+            font-weight: bold;
+            font-size: 16px;
+            font-family: 'Arial';
+            padding: 8px 12px;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .nav-link a:hover {
+            background-color: #e6f4e6;
+        }
+
+        section {
+            width: 100vw;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+
+        #home {
+            background-color: #ffdfd8;
+        }
+
+        #about {
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        #shop {
+            background-color: #e6f4e6;
+            text-align: center;
+        }
+
+        #gallery {
+            background-color: #f0f0ff;
+            text-align: center;
+        }
+
+        #contact {
+            background-color: #fffaf0;
+            text-align: center;
+        }
+
+        .home-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1500px;
+            margin: 0 auto;
+        }
+
+        .dog {
+            width: 700px;
+            height: auto;
+            right: 0;
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .shop-img {
+            width: 300px;
+            max-width: 90%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .shop-button {
+            background-color: #4D7C4B;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .shop-button:hover {
+            background-color: #3c613a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
+<header class="navbar">
+    <nav>
+        <ul class="nav-link">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About YAYA</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="home" class="home-box">
+        <img src="img/Logo.png" height="300px" width="auto">
+        <img src="img/home.png" class="dog">
+    </section>
 
+    <section id="about">
+        <h1>關於 YAYA</h1>
+        <p>牙牙是一隻暴牙的臘腸狗，個性固執又愛吃，但總是帶著自信的笑容。<br>原本住在麵包店旁，用牠的魅力吸引客人，<br>現在成了大家的開心吉祥物，專門傳遞快樂和勇氣！</p>
+        <img src="img/IMG_1766.png" alt="about yaya" class="about-img"/>
+    </section>
+
+    <section id="shop">
+        <h1>牙牙被綁架限量款水瓶</h1>
+        <img src="img/About YAYA.png" alt="product" class="shop-img"/>
+        <br>
+        <button class="shop-button">觀看更多</button>
+    </section>
+
+    <section id="gallery">
+        <h2>圖集</h2>
+        <div class="gallery-grid">
+            <!-- 未來可以放圖片 -->
+            <p>圖集正在建置中～</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <form>
+            <p>表單功能尚未實作</p>
+        </form>
+    </section>
+</main>
 </body>
 </html>
