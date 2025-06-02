@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #4D7C4B;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Arial';
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-link a:hover {
+    background-color: #e6f4e6;
+}
+
+section {
+    width: 100vw;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+#home {
+    background-color: #ffdfd8;
+}
+
+#about {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#shop {
+    background-color: #e6f4e6;
+    text-align: center;
+}
+
+#gallery {
+    background-color: #f0f0ff;
+    text-align: center;
+}
+
+#contact {
+    background-color: #fffaf0;
+    text-align: center;
+}
+
+.home-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.dog {
+    width: 700px;
+    height: auto;
+    right: 0;
+}
+
+.shop-img {
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.shop-button {
+    background-color: #4D7C4B;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #3c613a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
