@@ -46,26 +46,36 @@ section {
 
 #home {
     background-color: #ffdfd8;
+    position: relative;
+    display: inline-block;
 }
 
 #about {
     background-color: #ffffff;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 #shop {
     background-color: #e6f4e6;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 #gallery {
     background-color: #f0f0ff;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 #contact {
     background-color: #fffaf0;
     text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 .home-box {
